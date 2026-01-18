@@ -76,6 +76,28 @@
 		}
 	</style>
 	<style>
+		/* 1. Hide the desktop version by default (Mobile First) */
+	.module-desktop {
+	  display: none;
+	}
+	
+	/* 2. Show the mobile version by default */
+	.module-mobile {
+	  display: block;
+	}
+	
+	/* 3. Use a Media Query to swap them at a specific breakpoint (e.g., 768px) */
+	@media (min-width: 768px) {
+	  .module-desktop {
+	    display: block;
+	  }
+	  
+	  .module-mobile {
+	    display: none;
+	  }
+	}
+	</style>
+	<style>
 		.fa, .fas {
 			font-weight: 900;
 		}
@@ -779,7 +801,7 @@ var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"s
 		</section>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-fa4cb5e elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fa4cb5e" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-					<div id="module-2-desktop' class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8cc45f8 animated fadeInRight" style="height: 100%" data-id="8cc45f8" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+					<div id="module-2-desktop" class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8cc45f8 animated fadeInRight module-desktop" data-id="8cc45f8" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-56881c0 elementor-widget elementor-widget-image" data-id="56881c0" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
@@ -798,7 +820,7 @@ var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"s
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">מודול 2:  שיטות הקסם לגור המושלם</h2>		</div>
 				</div>
-				<div id="module-2-mobile' class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8cc45f8 animated fadeInRight" style="height: 100%" data-id="8cc45f8" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+				<div id="module-2-mobile' class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8cc45f8 animated fadeInRight module-mobile" data-id="8cc45f8" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-56881c0 elementor-widget elementor-widget-image" data-id="56881c0" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
