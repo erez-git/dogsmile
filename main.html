@@ -6,6 +6,19 @@
 <meta name="robots" content="max-image-preview:large">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<style>
+		@media screen and (min-width: 768px) {
+		    .modules-direction {
+		        display: flex;
+		    }
+
+			.modules-direction:nth-child(even) {
+    			flex-direction: column-reverse;
+			}
+
+			.modules-direction:nth-child(odd) {
+    			flex-direction: column;
+			}
+		}
 		#img-2 {
 			height: 400px;
     		width: 400px;
